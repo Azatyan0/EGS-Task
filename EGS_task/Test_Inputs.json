@@ -1,0 +1,191 @@
+[
+  {
+    "key": "01.01.1 01:00:00",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "123123123213fds1111.12.202 21:00:01234234324234230 ,IT'S VALID DATE! ",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "31.12.2023 23:59:59",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "27.03.1900 00:00:00",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "27.03.1900 00:00:9027.03.1900 00:00:00",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "27.03.1900 00:00:90 some string 27.03.1900 00:00:00 sdfsd",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "29.02.4 00:00:00",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "28.02.5 12:37:43",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "it's Leap Year! 29.02.4 12:37:43 it's Leap Year!",
+    "result": {
+      "actual": null,
+      "expected": true
+    }
+  },
+  {
+    "key": "29.02.3 12:37:43 not LEAP YEAR!",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "30.02.4 12:37:43 Feb Trap",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "Again Feb trap 31.02.5 11:31:23 Again Feb trap",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "31.04.5 12:37:43 Feb trap with Leap Year",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "31.09.5 12:37:43 Feb trap with Leap Year",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "00.00.00 00:00:00",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "   ",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "12.aa.2022 21:00:00",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "12.11.2022  21:00:00 two white space between date and time pattern!",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "12.11.2024 21:00:00 out of range year",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "12.13.202 21:00:00 out of range month",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "67.13.202 21:00:00 out of range day",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "07:13:202 21:00:00 {:} instead of {.}",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "07.13.202 21.00.00 {.} instead of {:}",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "07.13.202 21.00.89 not valid second",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "07.13.202 21.70.19 not valid minute",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  },
+  {
+    "key": "07.13.202 24.00.00 not valid hour",
+    "result": {
+      "actual": null,
+      "expected": false
+    }
+  }
+]
